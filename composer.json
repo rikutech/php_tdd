@@ -1,0 +1,27 @@
+{
+    "name": "rikutech/php_tdd",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "authors": [
+        {
+            "name": "rikutech",
+            "email": "rikutech@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor/"
+    }
+}
