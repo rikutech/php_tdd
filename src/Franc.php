@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-class Doller4
+class Franc
 {
     private $amount;
 
@@ -10,7 +10,7 @@ class Doller4
         $this->amount = $amount;
     }
 
-    public function times(int $multiplier): Doller4
+    public function times(int $multiplier): Franc
     {
         return new self($this->amount * $multiplier);
     }

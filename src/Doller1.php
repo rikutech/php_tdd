@@ -10,7 +10,7 @@ class Doller1
         $this->amount = $amount;
     }
 
-    public function times(int $multiplier)
+    public function times(int $multiplier): void
     {
         $this->amount = $this->amount * $multiplier;
     }

@@ -10,12 +10,12 @@ class Doller3
         $this->amount = $amount;
     }
 
-    public function times(int $multiplier)
+    public function times(int $multiplier): Doller3
     {
         return new self($this->amount * $multiplier);
     }
 
-    public function equals(self $other)
+    public function equals(self $other): bool
     {
         return $this->amount === $other->amount;
     }

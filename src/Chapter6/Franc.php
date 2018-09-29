@@ -1,16 +1,14 @@
 <?php
-namespace App;
+namespace App\Chapter6;
 
-class Doller2
+class Franc extends Money
 {
-    public $amount;
-
     public function __construct(int $amount)
     {
         $this->amount = $amount;
     }
 
-    public function times(int $multiplier): Doller2
+    public function times(int $multiplier): Franc
     {
         return new self($this->amount * $multiplier);
     }
