@@ -1,9 +1,9 @@
 <?php
 namespace App;
 
-class Doller3
+class Doller4
 {
-    public $amount;
+    private $amount;
 
     public function __construct(int $amount)
     {
@@ -15,8 +15,11 @@ class Doller3
         return new self($this->amount * $multiplier);
     }
 
-    public function equals(self $other)
+    public function equals($other)
     {
+        if(!$other instanceof static) {
+            return false;
+        }
         return $this->amount === $other->amount;
     }
 }
