@@ -16,24 +16,24 @@ class Chapter8Test extends TestCase
     public function testMultiplication()
     {
         $five = Money::doller(5);
-        $this->assertEquals(new Doller(10), $five->times(2));
-        $this->assertEquals(new Doller(15), $five->times(3));
+        $this->assertEquals(Money::doller(10), $five->times(2));
+        $this->assertEquals(Money::doller(15), $five->times(3));
     }
 
     public function testFrancMultiplication()
     {
-        $five = new Franc(5);
-        $this->assertEquals(new Franc(10), $five->times(2));
-        $this->assertEquals(new Franc(15), $five->times(3));
+        $five = Money::franc(5);
+        $this->assertEquals(Money::franc(10), $five->times(2));
+        $this->assertEquals(Money::franc(15), $five->times(3));
     }
 
     public function testEquality()
     {
-        $doller = new Doller(5);
-        $franc = new Franc(5);
-        $this->assertTrue($doller->equals(new Doller(5)));
-        $this->assertFalse($doller->equals(new Doller(3)));
-        $this->assertTrue($franc->equals(new Franc(5)));
-        $this->assertFalse($franc->equals(new Franc(3)));
+        $doller = Money::doller(5);
+        $franc = Money::franc(5);
+        $this->assertTrue($doller->equals(Money::doller(5)));
+        $this->assertFalse($doller->equals(Money::doller(3)));
+        $this->assertTrue($franc->equals(Money::franc(5)));
+        $this->assertFalse($franc->equals(Money::franc(3)));
     }
 }
