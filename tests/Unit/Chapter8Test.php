@@ -2,8 +2,6 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use App\Chapter8\Doller;
-use App\Chapter8\Franc;
 use App\Chapter8\Money;
 
 class Chapter8Test extends TestCase
